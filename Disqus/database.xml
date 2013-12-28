@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sql>
+	<name>Disqus configuration database creation</name>
+	<version>1.0</version>
+	<license>Creative Commons Attribution 4.0 International</license>
+
+	<!--
+		Module's tables
+		Prefixed by module_<module name> to avoid collision
+	-->
+	<tables />
+
+	<!--
+		Content inserted at module's installation
+	-->
+	<content>
+		<query>
+			INSERT IGNORE INTO setting (name, content) VALUES ('disqus_shortname', '');
+			INSERT IGNORE INTO setting (name, content) VALUES ('disqus_disable_mobile', '0');
+		</query>
+	</content>
+</sql>
